@@ -7,6 +7,7 @@ test_cases=$(cat test_cases.txt)
 x=1
 while read -r test_case; do
   # Extract input values from the test case string
+  
   gender=$(echo $test_case | awk '{print $1}')
   height=$(echo $test_case | awk '{print $2}')
   barReps=$(echo $test_case | awk '{print $3}')
